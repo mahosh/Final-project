@@ -30,7 +30,7 @@ export default class Week extends Component {
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Table cell</td>
+                        <td><Day/></td>
                         <td>Table cell</td>
                         <td>Table cell</td>
                         <td>Table cell</td>
