@@ -1,4 +1,9 @@
 import React, { Component } from 'react';
+import './Meal.css';
+import 'antd/dist/antd.css';
+import './index.css';
+import { TimePicker } from 'antd';
+import moment from 'moment';
 
 export default class Meal extends Component {
     
@@ -7,12 +12,10 @@ export default class Meal extends Component {
     }
     render() {
         const { typeOfMeal } = this.props;
+        const format = 'HH:mm';
         return(
             <div>
-                <label for="hours">שעה: </label>
-                <input id="hours" maxLength="2" type="text" pattern="([0-1][0-9])|([2][0-3])"></input>
-                <span> : </span>
-                <input id="minutes" maxLength="2" type="text" pattern="([0-5][0-9])"></input>
+                <TimePicker defaultValue={moment('00:00', format)} format={format} />
             </div>
         )
     }
