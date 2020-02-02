@@ -14,7 +14,7 @@ export default class Day extends Component {
     }
     render() {
         return(
-            <Meal></Meal>
+            <Meal typeOfMeal="lunch"></Meal>
         )
     }
 
