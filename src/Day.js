@@ -8,13 +8,16 @@ export default class Day extends Component {
         super(props);
 
         this.state = {
-            
+            meals: []
         }
 
     }
     render() {
         return(
-            <Meal typeOfMeal="lunch"></Meal>
+            <div>
+                <button className="addMeal" onClick="" type="button">הוסף ארוחה</button>
+                <Meal typeOfMeal="lunch"></Meal>
+            </div>
         )
     }
 
