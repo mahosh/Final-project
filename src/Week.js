@@ -1,6 +1,7 @@
 import Table from 'react-bootstrap/Table';
 import React, { Component } from 'react';
 import Day from './Day';
+import './Week.css';
 
 
 

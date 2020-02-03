@@ -1,17 +1,17 @@
 .morning {
-    background-color: yellow;
+    background-color: #0069d9;
 }
 .branch{
-    background-color: orange;
+    background-color: #28a745;
 }
 .lunch {
-    background-color: teal;
+    background-color: #ffc107;
 }
 .four {
-    background-color: green;
+    background-color: dc3545;
 }
 .evening {
-    background-color: greenyellow;
+    background-color: #17a2b8;
 }
 h3 {
     text-size: 12px;
