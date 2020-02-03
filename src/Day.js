@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import Meal from './Meal';
+import PickingMeal from './PickingMeal';
+import Button from 'react-bootstrap/Button';
 
 
 export default class Day extends Component {
@@ -8,15 +10,36 @@ export default class Day extends Component {
         super(props);
 
         this.state = {
-            meals: []
+            meals: [],
+            showPickingMeal: false
         }
+        this.handleClose = this.handleClose.bind(this);
+        this.addNewMeal = this.addNewMeal.bind(this);
 
     }
+    handleClose() {
+        this.setState({
+            showPickingMeal: false
+        })
+    }
+    addNewMeal(typeOfMeal){
+        this.setState({
+            meals: this.state.meals.push(typeOfMeal)
+        })
+        
+    }
     render() {
+        console.log(this.state.meals);
+        const mealsToShow = this.state.meals.map(currentMeal =>
+            <Meal typeOfMeal={currentMeal} />)
+        const {showPickingMeal} = this.state;
         return(
             <div>
-                <button className="addMeal" onClick="" type="button">הוסף ארוחה</button>
-                <Meal typeOfMeal="lunch"></Meal>
+                <Button onClick={() => {this.setState({showPickingMeal: true})}}>הוסף ארוחה</Button>
+                <div>
+                    {mealsToShow}
+                </div>
+                <PickingMeal show={showPickingMeal} handleClose={this.handleClose} addNewMeal={this.addNewMeal}/>
             </div>
         )
     }

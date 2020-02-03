@@ -17,29 +17,34 @@ export default class Week extends Component {
     }
     render() {
         return(
-            <Table responsive>
-                <thead>
-                    <tr>
-                        <th>יום א</th>
-                        <th>יום ב</th>
-                        <th>יום ג</th>
-                        <th>יום ד</th>
-                        <th>יום ה</th>
-                        <th>יום ו</th>
-                        <th>יום ש</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><Day/></td>
-                        <td>Table cell</td>
-                        <td>Table cell</td>
-                        <td>Table cell</td>
-                        <td>Table cell</td>
-                        <td>Table cell</td>
-                    </tr>
-                </tbody>
-            </Table>
+            <div>
+                <h1>יומן אכילה</h1>
+                <h2></h2>
+                <Table responsive>
+                    <thead>
+                        <tr>
+                            <th>יום א</th>
+                            <th>יום ב</th>
+                            <th>יום ג</th>
+                            <th>יום ד</th>
+                            <th>יום ה</th>
+                            <th>יום ו</th>
+                            <th>יום ש</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><Day/></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </Table>
+            </div>
         )
     }
 
