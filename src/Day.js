@@ -38,7 +38,7 @@ export default class Day extends Component {
                 <div>
                     {mealsToShow}
                 </div>
-                <PickingMeal show={showPickingMeal} handleClose={this.handleClose} addNewMeal={this.addNewMeal}/>
+                <PickingMeal show={showPickingMeal} meals={this.state.meals} handleClose={this.handleClose} addNewMeal={this.addNewMeal}/>
             </div>
         )
     }
