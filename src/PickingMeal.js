@@ -7,7 +7,7 @@ export default class PickingMeal extends Component {
         super(props);
     }
     render(){
-        function onButtonClick(event, meal){
+        function onButtonClick(meal){
             handleClose()
             addNewMeal(meal)
           }

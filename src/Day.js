@@ -24,9 +24,8 @@ export default class Day extends Component {
     }
     addNewMeal(typeOfMeal){
         this.setState({
-            meals: this.state.meals.push(typeOfMeal)
+            meals: this.state.meals.concat(typeOfMeal)
         })
-        
     }
     render() {
         console.log(this.state.meals);
