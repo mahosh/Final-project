@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Meal from './Meal';
 import PickingMeal from './PickingMeal';
 import Button from 'react-bootstrap/Button';
+import './Day.css'
 
 
 export default class Day extends Component {
@@ -33,7 +34,7 @@ export default class Day extends Component {
         const {showPickingMeal} = this.state;
         return(
             <div>
-                <Button onClick={() => {this.setState({showPickingMeal: true})}}>הוסף ארוחה</Button>
+                <Button className="addMeal" onClick={() => {this.setState({showPickingMeal: true})}}>הוסף ארוחה</Button>
                 <div>
                     {mealsToShow}
                 </div>

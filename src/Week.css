@@ -1,3 +1,9 @@
 .table-responsive {
     padding: 20px 40px 0px 40px;
 }
+.tableWrapper {
+    margin: 0 150px;
+}
+th {
+    width: 120px;
+}

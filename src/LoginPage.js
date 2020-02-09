@@ -38,7 +38,7 @@ export default class LoginPage extends Component {
         const errorAlert = showInvalidLoginError ? <Alert variant="danger">Invalid email or password!</Alert> : null;
 
         return (
-            <Modal show={show} onHide={handleClose}>
+            <Modal show={show} onHide={handleClose} aria-labelledby="contained-modal-title-vcenter" centered>
                 <Modal.Header>
                     <Modal.Title>התחברו</Modal.Title>
                 </Modal.Header>

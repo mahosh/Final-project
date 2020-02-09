@@ -21,30 +21,32 @@ export default class Week extends Component {
             <div>
                 <h1>יומן אכילה</h1>
                 <WeekHeader/>
-                <Table responsive>
-                    <thead>
-                        <tr>
-                            <th>יום א</th>
-                            <th>יום ב</th>
-                            <th>יום ג</th>
-                            <th>יום ד</th>
-                            <th>יום ה</th>
-                            <th>יום ו</th>
-                            <th>יום ש</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><Day/></td>
-                            <td><Day/></td>
-                            <td><Day/></td>
-                            <td><Day/></td>
-                            <td><Day/></td>
-                            <td><Day/></td>
-                            <td><Day/></td>
-                        </tr>
-                    </tbody>
-                </Table>
+                <div class="tableWrapper">
+                    <Table responsive>
+                        <thead>
+                            <tr>
+                                <th>יום א</th>
+                                <th>יום ב</th>
+                                <th>יום ג</th>
+                                <th>יום ד</th>
+                                <th>יום ה</th>
+                                <th>יום ו</th>
+                                <th>יום ש</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><Day/></td>
+                                <td><Day/></td>
+                                <td><Day/></td>
+                                <td><Day/></td>
+                                <td><Day/></td>
+                                <td><Day/></td>
+                                <td><Day/></td>
+                            </tr>
+                        </tbody>
+                    </Table>
+                </div>
             </div>
         )
     }
