@@ -28,7 +28,6 @@ export default class Day extends Component {
         })
     }
     render() {
-        console.log(this.state.meals);
         const mealsToShow = this.state.meals.map(currentMeal =>
             <Meal typeOfMeal={currentMeal} />)
         const {showPickingMeal} = this.state;

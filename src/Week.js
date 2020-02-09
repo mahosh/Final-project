@@ -2,6 +2,7 @@ import Table from 'react-bootstrap/Table';
 import React, { Component } from 'react';
 import Day from './Day';
 import './Week.css';
+import WeekHeader from './WeekHeader';
 
 
 
@@ -19,7 +20,7 @@ export default class Week extends Component {
         return(
             <div>
                 <h1>יומן אכילה</h1>
-                <h2></h2>
+                <WeekHeader/>
                 <Table responsive>
                     <thead>
                         <tr>
@@ -35,12 +36,12 @@ export default class Week extends Component {
                     <tbody>
                         <tr>
                             <td><Day/></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
+                            <td><Day/></td>
+                            <td><Day/></td>
+                            <td><Day/></td>
+                            <td><Day/></td>
+                            <td><Day/></td>
+                            <td><Day/></td>
                         </tr>
                     </tbody>
                 </Table>
