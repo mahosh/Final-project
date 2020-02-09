@@ -82,19 +82,19 @@ export default class WeekPick extends React.Component {
     return (
         <Modal show={show} onHide={handleClose}>
             <Modal.Header>
-                <Modal.Title>בחר ארוחה</Modal.Title>
+                <Modal.Title>בחר שבוע</Modal.Title>
             </Modal.Header>
             <Modal.Body>
                 <div className="SelectedWeekExample">
                     <DayPicker
-                    selectedDays={selectedDays}
-                    showWeekNumbers
-                    showOutsideDays
-                    modifiers={modifiers}
-                    onDayClick={this.handleDayChange}
-                    onDayMouseEnter={this.handleDayEnter}
-                    onDayMouseLeave={this.handleDayLeave}
-                    onWeekClick={this.handleWeekClick}
+                        selectedDays={selectedDays}
+                        showWeekNumbers
+                        showOutsideDays
+                        modifiers={modifiers}
+                        onDayClick={this.handleDayChange}
+                        onDayMouseEnter={this.handleDayEnter}
+                        onDayMouseLeave={this.handleDayLeave}
+                        onWeekClick={this.handleWeekClick}
                     />
                     {selectedDays.length === 7 && (
                     <div>

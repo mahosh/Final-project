@@ -25,7 +25,7 @@ export default class WeekHeader extends Component {
         const { showWeekPick } = this.state;
         return(
             <div>
-                <h1 onClick={() => {this.setState({showWeekPick: true})}}>click here</h1>
+                <h5 onClick={() => {this.setState({showWeekPick: true})}}>click here</h5>
                 <WeekPick show={showWeekPick} handleClose={this.handleClose} /*addNewMeal={this.addNewMeal}*//>
             </div>
         )
