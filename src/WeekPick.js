@@ -41,6 +41,8 @@ export default class WeekPick extends React.Component {
     this.setState({
       selectedDays: getWeekDays(getWeekRange(date).from),
     });
+    this.props.showWeek(getWeekDays(getWeekRange(date).from));
+    this.props.handleClose();
   };
 
   handleDayEnter = date => {
@@ -56,13 +58,12 @@ export default class WeekPick extends React.Component {
   };
 
   handleWeekClick = (weekNumber, days, e) => {
-    this.setState({
-      selectedDays: days,
-    });
+    this.props.showWeek(days);
+    this.props.handleClose();
   };
 
   render() {
-    const { show, handleClose } = this.props;
+    const { show, handleClose, showWeek } = this.props;
     const { hoverRange, selectedDays } = this.state;
 
     const daysAreSelected = selectedDays.length > 0;
@@ -96,12 +97,6 @@ export default class WeekPick extends React.Component {
                         onDayMouseLeave={this.handleDayLeave}
                         onWeekClick={this.handleWeekClick}
                     />
-                    {selectedDays.length === 7 && (
-                    <div>
-                        {moment(selectedDays[0]).format('LL')} –{' '}
-                        {moment(selectedDays[6]).format('LL')}
-                    </div>
-                    )}
                 </div>
             </Modal.Body>
         </Modal>
