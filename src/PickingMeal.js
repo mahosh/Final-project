@@ -12,6 +12,10 @@ export default class PickingMeal extends Component {
             addNewMeal(meal)
           }
         const { show, handleClose, addNewMeal, meals } = this.props;
+     /*   meals.forEach(element => {
+            
+            
+        });*/
         return(
             <Modal show={show} onHide={handleClose}>
                 <Modal.Header>
