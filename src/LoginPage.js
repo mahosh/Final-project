@@ -14,10 +14,10 @@ export default class LoginPage extends Component {
         
         this.login = this.login.bind(this);
     }
-    login() {debugger;
+    login() {
        // const { allUsers, handleLogin } = this.props;
         const { email, pwd } = this.state;
-        const handleClose = this.props;
+        const {handleClose, allUsers} = this.props;
         const newActiveUser = allUsers.find(user => user.email.toLowerCase() === email.toLowerCase() && user.pwd === pwd);
 
         if (newActiveUser) {
@@ -50,13 +50,13 @@ export default class LoginPage extends Component {
                             <Form>
                                 <Form.Group controlId="formBasicEmail">
                                     <Form.Label>Email address</Form.Label>
-                                    <Form.Control name="email" value={email}
+                                    <Form.Control name="email" defaultValue={email}
                                         type="email" placeholder="Enter email" onChange={this.handleInputChange} />
                                 </Form.Group>
 
                                 <Form.Group controlId="formBasicPassword">
                                     <Form.Label>Password</Form.Label>
-                                    <Form.Control name="pwd" value={pwd}
+                                    <Form.Control name="pwd" defaultValue={pwd}
                                         type="password" placeholder="Password" onChange={this.handleInputChange} />
                                 </Form.Group>
                                 <Button variant="success" type="button" block onClick={this.login}>

@@ -1,6 +1,6 @@
 input {
-    border: none;
-    width: 19px;
+    /* border: none; */
+    /* width: 19px; */
 }
 span.ant-time-picker {
     direction: ltr !important;

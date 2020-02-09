@@ -10,20 +10,49 @@ export default class Meal extends Component {
     
     constructor(props) {
         super(props);
+
+        this.state = {
+            numOfDishes: 1,
+            dishValues: []
+        }
+        this.manageRows = this.manageRows.bind(this);
     }
+
+
+    manageRows(e) {
+        if (e.keyCode === 13) {
+           this.setState({
+               numOfDishes: this.state.numOfDishes + 1
+           })
+        } else if (e.keyCode === 8) {
+            alert("backspace pressed");
+        }
+    }
+
     render() {
+        const { numOfDishes } = this.state;
         const { typeOfMeal } = this.props;
         const format = 'HH:mm';
-        function manageRows(e){
-            if(e.keyCode == 13){}
-            else {}
-        } 
+
+        let inputs = [];
+        for (var i = 0; i < numOfDishes; i++) {
+            let input;
+            if (i === numOfDishes - 1) {
+                //value={dishValues[i]}
+                input = <input type="text" className="txtSearch"  onKeyDown={this.manageRows} maxLength="9" autoFocus/>
+            } else {
+                input = <input type="text" className="txtSearch" onKeyDown={this.manageRows} maxLength="9"/>
+            }
+            inputs.push(input);
+        }
+        
+
         return(
             <div className="mealWrap">
                 <TimePicker defaultValue={moment('00:00', format)} format={format} />
                 <div className="mealMenu">
                     <MealTitle typeOfMeal={typeOfMeal}></MealTitle>
-                    <input type="text" className="txtSearch" onkeydown="manageRow(event.keyCode)" maxLength="9"/>
+                    {inputs}
 
                 </div>
             </div>

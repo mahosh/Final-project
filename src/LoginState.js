@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 import LoginPage from './LoginPage';
+import jsonUsers from "./users"; 
 
 export default class LoginState extends Component {
     constructor(props) {
         super(props);
 
         this.state = {
-            showLoginModal: false
+            showLoginModal: true,
+            allUsers: jsonUsers
         }
         this.handleClose = this.handleClose.bind(this);
     }
@@ -16,9 +18,9 @@ export default class LoginState extends Component {
         })
     }
     render() {
-        const {showLoginModal} = this.state;
+        const {showLoginModal, allUsers} = this.state;
         return(
-            <LoginPage show={showLoginModal} handleClose={this.handleClose}/>
+            <LoginPage show={showLoginModal} handleClose={this.handleClose} allUsers={allUsers}/>
         )
     }
 }

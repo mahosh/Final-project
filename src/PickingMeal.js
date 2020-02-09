@@ -23,27 +23,27 @@ export default class PickingMeal extends Component {
                 </Modal.Header>
                 <Modal.Body>
                     <div className="buttonContainer">
-                        <Button variant="primary" onClick={() => onButtonClick('morning')}>
+                        <Button variant="primary" onClick={() => onButtonClick('morning')} disabled={meals.includes("morning")}>
                             ארוחת בוקר
                         </Button>
                     </div>
                     <div className="buttonContainer">
-                        <Button variant="success" onClick={() => onButtonClick("branch")}>
+                        <Button variant="success" onClick={() => onButtonClick("branch")} disabled={meals.includes("branch")}>
                             בראנץ'
                         </Button>
                     </div>
                     <div className="buttonContainer">
-                        <Button variant="warning" onClick={() => onButtonClick("lunch")}>
+                        <Button variant="warning" onClick={() => onButtonClick("lunch")} disabled={meals.includes("lunch")}>
                             ארוחת צהריים
                         </Button>
                     </div>
                     <div className="buttonContainer">
-                        <Button variant="danger" onClick={() => onButtonClick("four")}>
+                        <Button variant="danger" onClick={() => onButtonClick("four")} disabled={meals.includes("four")}>
                             ארוחת ארבע
                         </Button>
                     </div>
                     <div className="buttonContainer">
-                        <Button variant="info" onClick={() => onButtonClick("evening")}>
+                        <Button variant="info" onClick={() => onButtonClick("evening")} disabled={meals.includes("evening")}>
                             ארוחת ערב
                         </Button>
                     </div>
