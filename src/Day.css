@@ -2,3 +2,7 @@ button.addMeal {
     width: 113px;
     height: 40px;
 }
+.dayWrapper {
+    padding: 10px 2px;
+    border: 1px solid black;
+}

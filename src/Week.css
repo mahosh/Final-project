@@ -6,4 +6,8 @@
 }
 th {
     width: 120px;
+    background: rgba(249, 184, 184, 0.6);
+}
+.weekWrapper {
+    background: rgba(123, 90, 115, 0.6);
 }

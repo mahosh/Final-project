@@ -16,7 +16,7 @@ export default class NavBar extends Component {
                         <Nav.Link >יומני אכילה</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                        <Nav.Link >Option 2</Nav.Link>
+                        <Nav.Link >מתכונים</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
                     <Nav.Link eventKey="disabled" disabled>

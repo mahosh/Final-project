@@ -1,10 +1,20 @@
-input {
-    /* border: none; */
-    /* width: 19px; */
-}
-span.ant-time-picker {
+.ant-time-picker-panel-input-wrap{
     direction: ltr !important;
 }
-#mealWrap {
-    border: 1px solid black;
+.mealWrap {
+    border-top: 1px solid black;
+    background: rgb(255,255,255, 0.6);
+    margin-top: 10px;
+}
+.mealWrap div {
+    margin-top: 20px;
+}
+.ant-time-picker-icon {
+    display: none;
+}
+.ant-time-picker i {
+    display: none;
+}
+.ant-time-picker-panel-combobox li{
+    text-align: initial;
 }

@@ -18,7 +18,7 @@ export default class Week extends Component {
     }
     render() {
         return(
-            <div>
+            <div className="weekWrapper">
                 <h1>יומן אכילה</h1>
                 <WeekHeader/>
                 <div class="tableWrapper">

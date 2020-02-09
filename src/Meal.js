@@ -24,9 +24,9 @@ export default class Meal extends Component {
            this.setState({
                numOfDishes: this.state.numOfDishes + 1
            })
-        } else if (e.keyCode === 8) {
+        } /*else if (e.keyCode === 8) {
             alert("backspace pressed");
-        }
+        }*/
     }
 
     render() {
@@ -39,9 +39,9 @@ export default class Meal extends Component {
             let input;
             if (i === numOfDishes - 1) {
                 //value={dishValues[i]}
-                input = <input type="text" className="txtSearch"  onKeyDown={this.manageRows} maxLength="9" autoFocus/>
+                input = <input type="text" className="txtSearch"  onKeyDown={this.manageRows} autoFocus/>
             } else {
-                input = <input type="text" className="txtSearch" onKeyDown={this.manageRows} maxLength="9"/>
+                input = <input type="text" className="txtSearch" onKeyDown={this.manageRows}/>
             }
             inputs.push(input);
         }

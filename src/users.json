@@ -10,7 +10,7 @@
         "id": 2,
         "fname": "John",
         "lname": "Doe",
-        "email": "john@john.com",
-        "pwd": "123"
+        "email": "maor@example.com",
+        "pwd": "1234"
     }
 ]

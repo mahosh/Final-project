@@ -33,7 +33,7 @@ export default class Day extends Component {
             <Meal typeOfMeal={currentMeal} />)
         const {showPickingMeal} = this.state;
         return(
-            <div>
+            <div className="dayWrapper">
                 <Button className="addMeal" onClick={() => {this.setState({showPickingMeal: true})}}>הוסף ארוחה</Button>
                 <div>
                     {mealsToShow}
