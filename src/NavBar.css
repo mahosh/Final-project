@@ -1,0 +1,13 @@
+.nav {
+    height: 300px;
+    position: relative;
+    font-weight: bold;
+}
+.navItemWrapper {
+    position: absolute;
+    bottom: 0px;
+    background-color: blue;
+}
+.nav-item {
+    display: inline-block;
+}
