@@ -17,7 +17,7 @@ export default class PickingMeal extends Component {
             
         });*/
         return(
-            <Modal show={show} onHide={handleClose}>
+            <Modal show={show} onHide={handleClose} aria-labelledby="contained-modal-title-vcenter" centered>
                 <Modal.Header>
                     <Modal.Title>בחר ארוחה</Modal.Title>
                 </Modal.Header>

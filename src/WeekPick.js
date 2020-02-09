@@ -81,7 +81,7 @@ export default class WeekPick extends React.Component {
     };
 
     return (
-        <Modal show={show} onHide={handleClose}>
+        <Modal show={show} onHide={handleClose} aria-labelledby="contained-modal-title-vcenter" centered>
             <Modal.Header>
                 <Modal.Title>בחר שבוע</Modal.Title>
             </Modal.Header>
