@@ -2,7 +2,7 @@
     padding: 20px 40px 0px 40px;
 }
 .tableWrapper {
-    margin: 0 150px;
+    margin: 0;
 }
 th {
     width: 120px;
@@ -10,4 +10,7 @@ th {
 }
 .weekWrapper {
     background: rgba(123, 90, 115, 0.6);
+}
+h1 {
+    color: rgb(107, 97, 97);
 }
